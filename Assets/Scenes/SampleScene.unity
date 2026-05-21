@@ -774,6 +774,8 @@ GameObject:
   - component: {fileID: 1897975068}
   - component: {fileID: 1897975067}
   - component: {fileID: 1897975066}
+  - component: {fileID: 1897975072}
+  - component: {fileID: 1897975071}
   - component: {fileID: 1897975070}
   m_Layer: 0
   m_Name: Cube 2
@@ -884,12 +886,35 @@ MonoBehaviour:
   m_GameObject: {fileID: 1897975065}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 448469b4400ac6e4fb6d6ac8b6ba6651, type: 3}
+  m_Script: {fileID: 11500000, guid: 16a930b1d40c9f547899df15b0927f21, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MoveCube
-  _speedRotarion: 100
-  _speedMove: 0.05
-  _speedScale: 0.5
+  m_EditorClassIdentifier: Assembly-CSharp::ScaleCapsule
+  _speed: 0.3
+--- !u!114 &1897975071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897975065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fc9e67f69bc92645822fe3a349c9d8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RotateCube
+  _speed: 16.95
+--- !u!114 &1897975072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897975065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6e22cc551b0f004aa88ca58003d2b0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MoveSphere
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
